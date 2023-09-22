@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: "Montserrat";
+  background-color: #141b56;
+}
+
+body.body {
+  display: grid;
+  grid-template-rows: 60px 1fr 60px;
+}
+
+header.header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 20px;
+  box-shadow: 0 2px 5px #0000004d;
+}
+
+nav.nav {
+  height: 60px;
+}
+
+.active {
+  border-bottom: 5px solid #00d1f1;
+  margin-top: -4px;
+  padding: 0px 26px;
+  padding-top: 13px;
+}
+
+div.brand {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+div.brand a {
+  text-decoration: none;
+}
+
+div.title {
+  color: #00d1f1;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+section.books {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 100px;
+}
+
+article.book img {
+  width: 200px;
+  cursor: pointer;
+}
+
+article.book img:hover {
+  opacity: 0.8;
+}
+
+menu.menu {
+  display: flex;
+  list-style: none;
+  padding: 4px 20px;
+  gap: 30px;
+  color: #f27bff;
+  padding-right: 60px;
+}
+
+li.menu-item {
+  cursor: pointer;
+  font-size: 14px;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+img.logo {
+  width: 32px;
+  height: auto;
+  margin-top: 4px;
+}
+
+footer.footer {
+  height: 60px;
+  color: #00d1f1;
+  font-size: 16px;
+  text-align: center;
+}
